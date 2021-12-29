@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="614.0" style="-fx-background-color: FDF7E2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientController">
+   <children>
+      <Pane layoutY="13.0" prefHeight="60.0" prefWidth="243.0" style="-fx-background-color: #1e90ff;" />
+      <Circle fill="DODGERBLUE" layoutX="244.0" layoutY="43.0" radius="30.0" stroke="DODGERBLUE" strokeType="INSIDE" />
+      <ImageView fitHeight="52.0" fitWidth="94.0" layoutX="214.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clienticon.png" />
+         </image>
+      </ImageView>
+      <Text fill="DODGERBLUE" layoutX="282.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Espace Client">
+         <font>
+            <Font name="Andalus" size="38.0" />
+         </font></Text>
+      <ImageView fitHeight="185.0" fitWidth="275.0" layoutX="206.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/methfourni.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="358.0" layoutY="79.0" prefHeight="52.0" prefWidth="66.0" style="-fx-background-color: FDF7E2;" />
+      <TableView fx:id="Clientstable" layoutX="93.0" layoutY="230.0" prefHeight="194.0" prefWidth="469.0">
+        <columns>
+          <TableColumn fx:id="id_client" prefWidth="75.0" text="id_client" />
+          <TableColumn fx:id="nom_prenom" prefWidth="93.5999755859375" text="nom_prenom" />
+            <TableColumn fx:id="tel" prefWidth="56.80006408691406" text="tel" />
+            <TableColumn fx:id="email" prefWidth="85.60003662109375" text="email" />
+            <TableColumn fx:id="adress" prefWidth="74.39996337890625" text="adress" />
+            <TableColumn fx:id="ville" prefWidth="82.4000244140625" text="ville" />
+        </columns>
+      </TableView>
+      <Button fx:id="RBtn" layoutX="6.0" layoutY="355.0" mnemonicParsing="false" onAction="#Retourner" prefHeight="58.0" prefWidth="82.0" style="-fx-background-image: url('C:\Users\LENOVO\projet-java\GestionDeStock\src\images\precedent.png'); -fx-background-color: 0000;">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/precedent.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Pane layoutX="233.0" layoutY="87.0" prefHeight="52.0" prefWidth="66.0" style="-fx-background-color: FDF7E2;" />
+      <Pane layoutX="391.0" layoutY="131.0" prefHeight="52.0" prefWidth="66.0" style="-fx-background-color: FDF7E2;" />
+      <Pane layoutX="294.0" layoutY="71.0" prefHeight="52.0" prefWidth="66.0" style="-fx-background-color: FDF7E2;" />
+     
+      <Pane layoutX="211.0" layoutY="131.0" prefHeight="52.0" prefWidth="66.0" style="-fx-background-color: FDF7E2;" />
+      <Button fx:id="ABtn" layoutX="159.0" layoutY="92.0" mnemonicParsing="false" onAction="#OuvrirAjoutClient" style="-fx-background-color: 0000;">
+         <graphic>
+            <ImageView fitHeight="93.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/ajouclt.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="modBtn" layoutX="286.0" layoutY="67.0" mnemonicParsing="false" onAction="#OuvrirModifClient" style="-fx-background-color: 0000;">
+         <graphic>
+            <ImageView fitHeight="83.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/modifclt.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="SupprimBtn" layoutX="378.0" layoutY="88.0" mnemonicParsing="false" onAction="#Supprimer" style="-fx-background-color: 0000;">
+         <graphic>
+            <ImageView fitHeight="93.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/suppclt.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

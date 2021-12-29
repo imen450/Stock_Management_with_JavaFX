@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="617.0" style="-fx-background-color: FDF7E2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FactClt">
+   <children>
+      <Text fill="#df7206" layoutX="68.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une facture" wrappingWidth="196.42193603515625">
+         <font>
+            <Font name="Agency FB" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="N_fact :">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+      <Text layoutX="18.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Montant" wrappingWidth="57.59999999999991">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+      <Text layoutX="27.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TVA">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+      <Text layoutX="26.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id_clt">
+         <font>
+            <Font size="10.0" />
+         </font></Text>
+      <Button fx:id="ajouter" onAction="#Ajouter" layoutX="80.0" layoutY="246.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: #1e90ff;" text="Ajouter" textFill="#fafafa" />
+      <Text fill="#1e90ffeb" layoutX="197.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facture Client">
+         <font>
+            <Font name="Andalus" size="38.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableFactClt" layoutX="117.0" layoutY="291.0" prefHeight="192.0" prefWidth="415.0">
+        <columns>
+          <TableColumn fx:id="N_fact" prefWidth="84.79999160766602" text="N_fact" />
+          <TableColumn fx:id="Montant" prefWidth="121.60002136230469" text="Montant" />
+            <TableColumn fx:id="TVA" prefWidth="96.0" text="TVA" />
+            <TableColumn fx:id="id_clt" prefWidth="112.79998779296875" text="id_clt" />
+        </columns>
+      </TableView>
+     
+      <TextField fx:id="num" layoutX="80.0" layoutY="105.0" prefHeight="26.0" prefWidth="98.0" style="-fx-border-color: E7B40D;" />
+      <TextField fx:id="mnt" layoutX="80.0" layoutY="137.0" prefHeight="26.0" prefWidth="98.0" style="-fx-border-color: E7B40D;" />
+      <TextField fx:id="tva" layoutX="80.0" layoutY="171.0" prefHeight="26.0" prefWidth="98.0" style="-fx-border-color: E7B40D;" />
+      <TextField fx:id="id" layoutX="80.0" layoutY="202.0" prefHeight="26.0" prefWidth="98.0" style="-fx-border-color: E7B40D;" />
+      <Button fx:id="RBtn" layoutX="14.0" layoutY="409.0" mnemonicParsing="false" onAction="#Retourner" style="-fx-background-color: 0000;">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/precedent.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="supprimer" layoutX="429.0" layoutY="108.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #df7206; -fx-border-color: #df7206;" text="Supprimer" textFill="#efe7e7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="imp" alignment="CENTER" layoutX="435.0" layoutY="201.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #df7206; -fx-border-color: #df7206;" text="Imprimer" textFill="#f7f2f2" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="49.0" layoutX="380.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\LENOVO\projet-java\GestionDeStock\src\Views\pdficon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="57.0" layoutX="370.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="C:\Users\LENOVO\projet-java\GestionDeStock\src\Views\suppf.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

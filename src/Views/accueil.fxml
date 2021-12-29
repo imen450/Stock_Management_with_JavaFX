@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="621.0" style="-fx-background-color: arriere; -fx-background-size: 800;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Accueil">
+   <children>
+      <ImageView fitHeight="57.0" fitWidth="55.0" layoutX="563.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clienticon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="80.0" layoutX="522.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/achaticon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="435.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/acc.jpeg" />
+         </image>
+      </ImageView>
+      <Text fill="#d99546" layoutX="333.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bolder; -fx-font-size: 50;" text="Gestion de Stock " wrappingWidth="269.6000732421875">
+         <font>
+            <Font name="French Script MT" size="37.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="440.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fourniicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="49.0" layoutX="505.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/venteicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="74.0" layoutX="459.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/achat.png" />
+         </image>
+      </ImageView>
+      <Button  fx:id="FourBtn" layoutX="271.0" layoutY="102.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="155.0" style="-fx-background-color: #1e90ff;" text="fournisseur" onAction="#OuvrirFournisseur" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="AchatBtn" layoutX="271.0" layoutY="159.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="185.0" style="-fx-background-color: #1e90ff;" text="Achat" onAction="#OuvrirAchat" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="StockBtn" layoutX="271.0" layoutY="217.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="217.0" style="-fx-background-color: #1e90ff;" text="Stock" onAction="#OuvrirStock" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="VenteBtn" layoutX="271.0" layoutY="277.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="246.0" style="-fx-background-color: #1e90ff;" text="Vente" onAction="#OuvrirVente" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button  fx:id="ClientBtn" layoutX="271.0" layoutY="331.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="282.0" style="-fx-background-color: #1e90ff;" text="Client" onAction="#OuvrirClient" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
